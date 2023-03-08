@@ -9,6 +9,6 @@ import (
 type HealthController struct{}
 
 func (h HealthController) Status(c *gin.Context) {
-	c.String(http.StatusOK, "Working!")
+	c.String(http.StatusOK, "Version V1 Working!")
 
 }

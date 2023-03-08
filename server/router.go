@@ -13,7 +13,7 @@ func NewRouter() *gin.Engine {
 
 	health := new(controllers.HealthController)
 
-	router.GET("v1/health", health.Status)
+	router.GET("/health", health.Status)
 
 	return router
 
